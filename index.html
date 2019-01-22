@@ -95,7 +95,7 @@
 									if (row['mean_spendings'] > 0) {
 										z.push('rgb(158,202,225)')
 									} else {
-										z.push('rgb(242, 149, 113)')
+										z.push('rgb(165, 42, 42)')
 									}
 								}
 								var dataPlot = [
@@ -129,7 +129,23 @@
 									width: 800,
 									height: 600,
 									bargap :0.05,
-									paper_bgcolor: 'rgb(205, 197, 191)'
+									paper_bgcolor: '#fffaf0',
+									yaxis: {
+										title: {
+											text: 'Money spent[PLN]',
+											font: {
+												size: 18,
+												color: '#7f7f7f'
+											}
+									}},
+									xaxis: {
+										title: {
+											text: 'Day of the week',
+											font: {
+												size: 18,
+												color: '#7f7f7f'
+											}
+									}}
 								};
 
 								Plotly.newPlot('myDiv', dataPlot, layout);
@@ -262,7 +278,23 @@
 									width: 800,
 									height: 600,
 									bargap :0.05,
-									paper_bgcolor: 'rgb(205, 197, 191)'
+									paper_bgcolor: '#fffaf0',
+									yaxis: {
+										title: {
+											text: 'Money spent[PLN]',
+											font: {
+												size: 18,
+												color: '#7f7f7f'
+											}
+									}},
+									xaxis: {
+										title: {
+											text: 'Category',
+											font: {
+												size: 18,
+												color: '#7f7f7f'
+											}
+									}}
 								};
 
 								Plotly.newPlot('myDiv3', dataPlot, layout);
